@@ -7,4 +7,6 @@ fft_final.c contains 4 versions of FFT code. It contains the serial, multi-threa
 
 cuda_fft2d.cu contains the 2D FFT algorithm for GPU. 
 
+fft_cudaV2.cu is the ineffective GPU implementation of threading per calculation(j)
+
 A more detailed explanation of the codes above can be found in the final presentation pdf and the final report document. 
