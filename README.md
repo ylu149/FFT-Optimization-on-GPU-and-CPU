@@ -1,12 +1,22 @@
-# FFT-Optimization
-The goal of this project is to create various fast fourier transform algorithms utilizing hardware optimizations via the CPU and GPU to speed up performance. 
+# FFT Multithreading on CPU & GPU
 
-Note that for all codes below the Radix-2 decimation in frequency Cooley-Tukey algorithmn was used as the primary algorithm for optimization. The bitreversal step was removed for the sake of evaluating just the FFT performance. 
+## Overview
+This project implements Fast Fourier Transforms (FFT) using the Cooley-Tukey algorithm, optimized for both CPU and GPU. It aims to demonstrate efficient multithreading techniques and the benefits of parallel computing in FFT calculations.
 
-fft_final.c contains 4 versions of FFT code. It contains the serial, multi-threading per calculation(j), multi-threading per block of calculations(k), and finally the fully optimized version that multi-threads per block of calculations(k) with s being calculated by each thread. 
+## Features
+- **Serial FFT Implementation**: Utilizes the Cooley-Tukey algorithm for basic FFT calculations.
+- **CPU Multithreading**: Implements FFT using Pthreads to leverage CPU cores for improved performance.
+- **GPU Accelerated FFT**: Employs GPU capabilities for high-speed FFT processing.
+- **Performance Analysis**: Includes comparisons between serial, multithreaded CPU, and GPU implementations.
+- **Code Extensibility**: Structured for easy modification and extension for further research and optimization.
 
-cuda_fft2d.cu contains the 2D FFT algorithm for GPU. 
+## Installation
+1. Clone the repository: `git clone [GitHub-Link]`
+2. Navigate to the project directory: `cd FFT-Multithreading-CPU-GPU`
+3. Install required dependencies (if any): `instructions`
+4. Compile the project: `make`
 
-fft_cudaV2.cu is the ineffective GPU implementation of threading per calculation(j)
-
-A more detailed explanation of the codes above can be found in the final presentation pdf and the final report document. 
+## Usage
+- To run the serial FFT implementation: `command`
+- For running the CPU multithreaded version: `command`
+- To execute the GPU-accelerated FFT: `command`
