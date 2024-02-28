@@ -24,3 +24,6 @@ This project implements Fast Fourier Transforms (FFT) using the Cooley-Tukey alg
 - **fft_final.c**: `gcc fft_final.c -o fft_final -lpthread -lm`
 - **fft_cudaV2.cu**: `nvcc -o fft_cudaV2.cu -lcufft`
 - **cuda_fft2d.cu**: `nvcc -o cuda_fft2d.cu -lcufft`
+
+## Results
+<img width="525" alt="image" src="https://github.com/ylu149/FFT-Optimization-on-GPU-and-CPU/assets/112187763/93c9d51e-a6c8-45a7-82fa-01dacc0ddf52">
