@@ -26,4 +26,11 @@ This project implements Fast Fourier Transforms (FFT) using the Cooley-Tukey alg
 - **cuda_fft2d.cu**: `nvcc -o cuda_fft2d.cu -lcufft`
 
 ## Results
+- Matlab: FFT on MatLab
+- GPU V2: 2D FFT on GPU
+- Multi-thread_8: 8 Threads multithreading on CPU
+- Serial: Serial code
+- Multi-thread_16: 8 Threads multithreading on CPU
+
+  
 <img width="525" alt="image" src="https://github.com/ylu149/FFT-Optimization-on-GPU-and-CPU/assets/112187763/93c9d51e-a6c8-45a7-82fa-01dacc0ddf52">
